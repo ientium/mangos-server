@@ -3470,6 +3470,7 @@ namespace LuaPlayer
         if (!item)
         {
             uint32 itemId = Eluna::CHECKVAL<uint32>(L, 2);
+			DEBUG_LOG("STORAGE: DestroyItemCount item = %u, count = %u",itemId, itemCount);
             player->DestroyItemCount(itemId, itemCount, true);
         }
         else
